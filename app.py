@@ -22,3 +22,18 @@ def sort_by_length(arr):
  return arr
  
 sort_by_length(['hello', 'glasses', 'eye', 'word', ''])
+
+# Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.
+def sumDigits(number):
+  li = []
+  if number < 0:
+    number = number * -1
+    my_list = list(str(number))
+    for value in my_list:
+      li.append(int(value))
+  else:
+    my_list = list(str(number))
+    for value in my_list:
+      li.append(int(value))
+
+  return(sum(li))
