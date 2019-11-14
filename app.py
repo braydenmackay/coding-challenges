@@ -11,3 +11,14 @@ def reverse_number(n):
     n = str(n)
     reverse_str = n[::-1]
     return int(reverse_str) * -1
+
+# Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
+# For example, if this array were passed as an argument:
+# ["Telescopes", "Glasses", "Eyes", "Monocles"]
+# Your function would return the following array:
+# ["Eyes", "Glasses", "Monocles", "Telescopes"]
+def sort_by_length(arr):
+ arr.sort(key = len)
+ return arr
+ 
+sort_by_length(['hello', 'glasses', 'eye', 'word', ''])
