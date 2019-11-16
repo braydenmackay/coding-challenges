@@ -53,3 +53,18 @@ def sumDigits(number):
     return a / b
   else:
     return("operator not valid")
+
+# Complete the method which accepts an array of integers, and returns one of the following:
+# "yes, ascending" - if the numbers in the array are sorted in an ascending order
+# "yes, descending" - if the numbers in the array are sorted in a descending order
+# "no" - otherwise
+
+def is_sorted_and_how(arr):
+  if sorted(arr) == arr:
+    return("yes, ascending")
+  elif sorted(arr) == arr[::-1]:
+    return("yes, descending")
+  else:
+    return("no")
+
+is_sorted_and_how([3,2,1])
