@@ -68,3 +68,66 @@ def is_sorted_and_how(arr):
     return("no")
 
 is_sorted_and_how([3,2,1])
+
+# Given a string, replace every letter with its position in the alphabet.
+# If anything in the text isn't a letter, ignore it and don't return it.
+# "a" = 1, "b" = 2, etc.
+
+def alphabet_position(text):
+  my_list = []
+  for l in text:
+    if l.lower() == "a":
+      my_list.append("1")
+    elif l.lower() == "b":
+      my_list.append("2")
+    elif l.lower() == "c":
+      my_list.append("3")
+    elif l.lower() == "d":
+      my_list.append("4")
+    elif l.lower() == "e":
+      my_list.append("5")
+    elif l.lower() == "f":
+      my_list.append("6")
+    elif l.lower() == "g":
+      my_list.append("7")
+    elif l.lower() == "h":
+      my_list.append("8")
+    elif l.lower() == "i":
+      my_list.append("9")
+    elif l.lower() == "j":
+      my_list.append("10")
+    elif l.lower() == "k":
+      my_list.append("11")
+    elif l.lower() == "l":
+      my_list.append("12")
+    elif l.lower() == "m":
+      my_list.append("13")
+    elif l.lower() == "n":
+      my_list.append("14")
+    elif l.lower() == "o":
+      my_list.append("15")
+    elif l.lower() == "p":
+      my_list.append("16")
+    elif l.lower() == "q":
+      my_list.append("17")
+    elif l.lower() == "r":
+      my_list.append("18")
+    elif l.lower() == "s":
+      my_list.append("19")
+    elif l.lower() == "t":
+      my_list.append("20")
+    elif l.lower() == "u":
+      my_list.append("21")
+    elif l.lower() == "v":
+      my_list.append("22")
+    elif l.lower() == "w":
+      my_list.append("23")
+    elif l.lower() == "x":
+      my_list.append("24")
+    elif l.lower() == "y":
+      my_list.append("25")
+    elif l.lower() == "z":
+      my_list.append("26")
+
+  li = " ".join(my_list)
+  return(li)
