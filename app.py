@@ -131,3 +131,19 @@ def alphabet_position(text):
 
   li = " ".join(my_list)
   return(li)
+
+# You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+def find_outlier(integers):
+  even_list = []
+  odd_list = []
+  for i in integers:
+    if i % 2 == 0:
+      even_list.append(i)
+    else:
+      odd_list.append(i)
+  if len(even_list) == 1:
+    return(even_list[0])
+  else:
+    return(odd_list[0])
+
+find_outlier([1,2,3,5,7,9])
