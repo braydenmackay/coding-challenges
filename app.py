@@ -147,3 +147,19 @@ def find_outlier(integers):
     return(odd_list[0])
 
 find_outlier([1,2,3,5,7,9])
+
+# Given a number, write a function to output its reverse digits. (e.g. given 123 the answer is 321)
+# Numbers should preserve their sign; i.e. a negative number should still be negative when reversed.
+def reverse_number(n):
+  if n < 0:
+    n_pos = n * -1
+    rev = str(n_pos)[::-1]
+    reverse_num = int(rev)
+    answer = reverse_num * -1
+    return answer
+  else:
+    reverse_num = str(n)[::-1]
+    answer = int(reverse_num)
+    return answer
+
+reverse_number(-1234)
