@@ -214,3 +214,10 @@ def even_or_odd(number):
     return "Odd"
 
 even_or_odd(69)
+
+# Your task is to make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+def Descending_Order(num):
+  ascending_num = ''.join(sorted(str(num)))
+  return(int(ascending_num[::-1]))
+  
+Descending_Order(7893546)
