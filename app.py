@@ -189,3 +189,12 @@ def remove_exclamation_marks(s):
   return(''.join(s.split("!")))
 
 remove_exclamation_marks("wassup! you! are super! cool ma!n")
+
+# Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+def summation(num):
+  count = 0
+  for i in range(1,num+1):
+    count = count + i
+  return count
+
+summation(6)
