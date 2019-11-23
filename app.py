@@ -172,3 +172,14 @@ def is_divisible(n,x,y):
     return "false"
 
 is_divisible(12,6,3)
+
+# You get an array of numbers, return the sum of all of the positives ones.
+def positive_sum(arr):
+  count = 0
+  for i in arr:
+    if i > 0:
+      count = count + i
+  return count
+
+
+positive_sum([1,2,3,-4,-5,6,7])
