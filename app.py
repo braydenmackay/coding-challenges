@@ -183,3 +183,9 @@ def positive_sum(arr):
 
 
 positive_sum([1,2,3,-4,-5,6,7])
+
+# Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+def remove_exclamation_marks(s):
+  return(''.join(s.split("!")))
+
+remove_exclamation_marks("wassup! you! are super! cool ma!n")
