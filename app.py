@@ -163,3 +163,12 @@ def reverse_number(n):
     return answer
 
 reverse_number(-1234)
+
+# Create a function isDivisible(n, x, y) that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+def is_divisible(n,x,y):
+  if n % x == 0 and n % y == 0:
+    return "true"
+  else:
+    return "false"
+
+is_divisible(12,6,3)
