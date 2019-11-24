@@ -221,3 +221,14 @@ def Descending_Order(num):
   return(int(ascending_num[::-1]))
   
 Descending_Order(7893546)
+
+# For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+def square_digits(num):
+  my_list = []
+  str_num = str(num)
+  for i in str_num:
+    squared_val = int(i)**2
+    my_list.append(str(squared_val))
+  return(int(''.join(my_list)))
+
+square_digits(3113)
