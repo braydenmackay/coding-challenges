@@ -232,3 +232,15 @@ def square_digits(num):
   return(int(''.join(my_list)))
 
 square_digits(3113)
+
+# Write a function to convert a name into initials. This kata strictly takes two words with one space in between them. The output should be two capital letters with a dot separating them.
+def abbrevName(name):
+  answer = []
+  split_name = (name.split())
+  for word in split_name:
+    answer.append(word[0])
+  first_letter = answer[0].upper()
+  second_letter = answer[1].upper()
+  return(f'{first_letter}.{second_letter}')
+
+abbrevName('brayden mackay')
