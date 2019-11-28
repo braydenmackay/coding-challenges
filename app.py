@@ -253,3 +253,12 @@ def invert(lst):
   return(my_list)
 
 invert([-1,2,3,-4,5,6,-7])
+
+# Write a function that returns both the minimum and maximum number of the given list/array.
+def min_max(lst):
+  my_lst = []
+  my_lst.append(min(lst))
+  my_lst.append(max(lst))
+  return my_lst
+
+min_max([1,2,3,4,5,11,7,8])
