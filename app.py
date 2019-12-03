@@ -262,3 +262,14 @@ def min_max(lst):
   return my_lst
 
 min_max([1,2,3,4,5,11,7,8])
+
+# Make a program that filters a list of strings and returns a list with only your friends name in it. If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+def friend(x):
+  my_friends = []
+  for name in x:
+    if len(name) == 4:
+      my_friends.append(name)
+  return my_friends
+    
+
+friend(['kyle', 'brayden', 'tim', 'cole'])
