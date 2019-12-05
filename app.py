@@ -283,3 +283,18 @@ def bool_to_word(boolean):
 
 bool_to_word(True)
 
+# Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+def xo(s):
+  x_arr = []
+  o_arr = []
+  for char in s:
+    if char.lower() == 'x':
+      x_arr.append(char)
+    elif char.lower() == 'o':
+      o_arr.append(char)
+  if len(x_arr) == len(o_arr):
+    return True
+  else:
+    return False
+
+xo('xxoOxo')
