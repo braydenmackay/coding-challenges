@@ -308,3 +308,13 @@ def filter_list(l):
   return num_arr
 
 filter_list([1,2,3,'a','b',3,5])
+
+# Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean. If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+def bonus_time(salary, bonus):
+  if bonus == True:
+    salary = salary * 10
+    return('$' + str(salary))
+  else:
+    return('$' + str(salary))
+
+bonus_time(1000, True)
