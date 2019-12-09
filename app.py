@@ -318,3 +318,16 @@ def bonus_time(salary, bonus):
     return('$' + str(salary))
 
 bonus_time(1000, True)
+
+# Given an array of numbers (a list in groovy), determine whether the sum of all of the numbers is odd or even. Give your answer in string format as 'odd' or 'even'. If the input array is empty consider it as: [0] (array with a zero).
+def oddOrEven(arr):
+  total_sum = sum(arr)
+  num_items = len(arr)
+  if  num_items == 0:
+    return 'odd'
+  elif total_sum % 2 == 0:
+    return 'even'
+  else:
+    return 'odd'
+
+oddOrEven([])
