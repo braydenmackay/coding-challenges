@@ -331,3 +331,10 @@ def oddOrEven(arr):
     return 'odd'
 
 oddOrEven([])
+
+# Given an array of integers, return a new array with each value doubled.
+def maps(a):
+    my_arr = []
+    for num in a:
+      my_arr.append(num * 2)
+    return my_arr
