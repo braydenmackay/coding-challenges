@@ -351,3 +351,11 @@ def longest(s1, s2):
   combined_s = s1 + s2
   new_s = (set(combined_s))
   return ''.join(sorted(new_s))
+
+# Return the number (count) of vowels in the given string. We will consider a, e, i, o, and u as vowels
+def getCount(inputStr):
+  num_vowels = 0
+  for l in inputStr:
+    if l == 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u':
+      num_vowels = num_vowels + 1
+  return num_vowels
