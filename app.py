@@ -345,3 +345,9 @@ def number(bus_stops):
   for arr in bus_stops:
     total.append(arr[0] - arr[1])
   return sum(total)
+
+# Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible, containing distinct letters, Each taken only once - coming from s1 or s2.
+def longest(s1, s2):
+  combined_s = s1 + s2
+  new_s = (set(combined_s))
+  return ''.join(sorted(new_s))
