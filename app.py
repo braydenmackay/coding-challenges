@@ -359,3 +359,16 @@ def getCount(inputStr):
     if l == 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u':
       num_vowels = num_vowels + 1
   return num_vowels
+
+# Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it. Your task is to write a function maskify, which changes all but the last four characters into '#'.
+def maskify(cc):
+  my_list = []
+  char_len = len(cc)
+  count = 0
+  for char in cc:
+    if count < (char_len - 4):
+      my_list.append('#')
+      count = count + 1
+    else:
+      my_list.append(char)
+  return(''.join(my_list))
