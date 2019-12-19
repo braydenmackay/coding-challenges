@@ -393,3 +393,14 @@ def chromosome_check(sperm):
       return 'Congratulations! You\'re going to have a son.'
     else:
       return 'Congratulations! You\'re going to have a daughter.'
+
+# Given a mixed array of number and string representations of integers, add up the string integers and subtract this from the total of the non-string integers. Return as a number.
+def div_con(x):
+  int_arr = []
+  str_arr = []
+  for i in x:
+    if type(i) == int:
+      int_arr.append(i)
+    else:
+      str_arr.append(int(i))
+  return(sum(int_arr) - sum(str_arr))
