@@ -420,3 +420,12 @@ def monkey_count(n):
 # Write a function called repeatString which repeats the given String src exactly count times.
 def repeat_str(repeat, string):
   return string * repeat
+
+# Sum all the numbers of the array except the highest and the lowest element (the value, not the index!). (The highest/lowest element is respectively only one element at each edge, even if there are more than one with the same value!) If array is empty, null or None, or if only 1 Element exists, return 0.
+def sum_array(arr):
+  if arr == None:
+    return 0
+  elif len(arr) <= 2:
+    return 0
+  else:
+    return sum(arr) - max(arr) - min(arr)
