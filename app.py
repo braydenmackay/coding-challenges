@@ -436,3 +436,7 @@ def mouth_size(animal):
     return "small"
   else:
     return "wide"
+
+# We need a function that can transform a string into a number. 
+def string_to_number(s):
+  return int(s)
