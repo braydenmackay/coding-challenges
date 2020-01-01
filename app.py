@@ -440,3 +440,14 @@ def mouth_size(animal):
 # We need a function that can transform a string into a number. 
 def string_to_number(s):
   return int(s)
+
+# Create a function, called removeVowels (or remove_vowels), that takes a string argument and returns that same string with all vowels removed (vowels are "a", "e", "i", "o", "u").
+def remove_vowels(strng):
+  my_arr = []
+  vowels = []
+  for l in strng:
+    if l.lower() == 'a' or l.lower() == 'e' or l.lower() == 'i' or l.lower() == 'o' or l.lower() == 'u':
+      vowels.append(l)
+    else:
+      my_arr.append(l)
+  return ''.join(my_arr)
