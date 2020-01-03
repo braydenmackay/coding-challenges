@@ -451,3 +451,7 @@ def remove_vowels(strng):
     else:
       my_arr.append(l)
   return ''.join(my_arr)
+
+# Complete the solution so that it reverses the string value passed into it.
+def solution(string):
+  return string[::-1]
