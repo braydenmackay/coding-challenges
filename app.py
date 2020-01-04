@@ -455,3 +455,9 @@ def remove_vowels(strng):
 # Complete the solution so that it reverses the string value passed into it.
 def solution(string):
   return string[::-1]
+
+# Complete the solution so that it reverses all of the words within the string passed in.
+def reverseWords(str):
+  split = str.split(' ')
+  reverse = split[::-1]
+  return ' '.join(reverse)
