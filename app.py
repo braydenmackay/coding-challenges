@@ -461,3 +461,15 @@ def reverseWords(str):
   split = str.split(' ')
   reverse = split[::-1]
   return ' '.join(reverse)
+
+# Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime'.
+def divisors(integer):
+  my_arr = []
+  for num in range(2, integer):
+    if integer % num == 0:
+      my_arr.append(num)
+  if len(my_arr) >= 1:
+    return my_arr
+  else:
+    str = "{} is prime"
+    return str.format(integer)
