@@ -473,3 +473,12 @@ def divisors(integer):
   else:
     str = "{} is prime"
     return str.format(integer)
+
+# Write function avg which calculates average of numbers in given list.
+def find_average(arr):
+  if len(arr) > 0:
+    total = sum(arr)
+    avg = total / len(arr)
+    return avg
+  else:
+    return 0
