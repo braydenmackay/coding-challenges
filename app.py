@@ -489,3 +489,11 @@ def grow(arr):
   for i in arr:
     result = result * i
   return result
+
+# Given two integers a and b, which can be positive or negative, find the sum of all the numbers between including them too and return it. If the two numbers are equal return a or b. Note: a and b are not ordered!
+def get_sum(a,b):
+  arr = [a,b]
+  new_arr = []
+  for num in range(min(arr), max(arr) + 1):
+    new_arr.append(num)
+  return sum(new_arr)
