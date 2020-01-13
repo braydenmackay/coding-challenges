@@ -501,3 +501,10 @@ def get_sum(a,b):
 # Write a method sum (sum_array in python, sumarray in julia, SumArray in C#) that takes an array of numbers and returns the sum of the numbers. These may be integers or decimals for Ruby and any instance of Num for Haskell. The numbers can also be negative. If the array does not contain any numbers then you should return 0.
 def sum_array(a):
   return sum(a)
+
+# Create a function with two arguments that will return an array of the first (n) multiples of (x). Assume both the given number and the number of times to count will be positive numbers greater than 0.
+def count_by(x, n):
+  my_arr = []
+  for i in range(1, n+1):
+    my_arr.append(i * x)
+  return my_arr
