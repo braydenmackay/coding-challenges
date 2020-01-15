@@ -508,3 +508,10 @@ def count_by(x, n):
   for i in range(1, n+1):
     my_arr.append(i * x)
   return my_arr
+
+# Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+def double_char(s):
+  my_arr = []
+  for char in s:
+    my_arr.append(char * 2)
+  return ''.join(my_arr)
