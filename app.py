@@ -515,3 +515,10 @@ def double_char(s):
   for char in s:
     my_arr.append(char * 2)
   return ''.join(my_arr)
+
+# Task: Create a method is_uppercase() to see whether the string is ALL CAPS. 
+def is_uppercase(str):
+  if str == str.upper():
+    return True
+  else:
+    return False 
